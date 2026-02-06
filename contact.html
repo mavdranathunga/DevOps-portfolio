@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Contact DevOps Engineer" />
+  
+  <script>
+    (function () {
+      const key = "portfolioTheme";
+      const saved = localStorage.getItem(key);
+      if (saved === "light" || saved === "dark") {
+        document.documentElement.setAttribute("data-theme", saved);
+      } else {
+        const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+        document.documentElement.setAttribute("data-theme", prefersLight ? "light" : "dark");
+      }
+    })();
+  </script>
+
+  <title>Contact — Alex Morgan</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Alex Morgan <span style="color:var(--muted2);font-weight:700;">/ DevOps Engineer</span></span>
+      </a>
+
+      <button class="burger" type="button" data-burger aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" data-menu aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a class="active" href="contact.html">Contact</a>
+
+        <div class="actions">
+          <button class="iconBtn" type="button" data-theme-toggle aria-label="Toggle theme">
+            <span data-theme-icon aria-hidden="true"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="card pageHead reveal">
+      <div class="title">
+        <h1>Contact</h1>
+        <div class="cta" style="margin:0;">
+          <a class="btn primary" href="#" title="Replace with your Calendly / booking link">Book a Call</a>
+          <a class="btn" href="#" title="Replace with your resume link">Resume PDF</a>
+        </div>
+      </div>
+      <p>
+        Replace these dummy links with your real contact details.
+        Tip: the <b>Copy Email</b> button uses clipboard API and shows a toast.
+      </p>
+      <div class="meta">
+        <span>📍 Colombo, Sri Lanka (Dummy)</span>
+        <span>🕒 UTC+05:30</span>
+        <span>✅ Remote / Contract</span>
+        <span>🛡️ DevSecOps friendly</span>
+      </div>
+    </div>
+
+    <section class="reveal">
+      <div class="secHead">
+        <h2>Get in touch</h2>
+        <p>Fast contact actions (dummy). Keep it simple and professional.</p>
+      </div>
+
+      <div class="contact">
+        <div class="contactCard">
+          <h3>Direct</h3>
+          <p>Use these actions to reach me quickly.</p>
+
+          <div class="contactList">
+            <a href="#" title="Replace with mailto link">
+              <span>Email</span><span>alex.morgan@example.com</span>
+            </a>
+
+            <button type="button" data-copy-email="alex.morgan@example.com">
+              <span>Copy Email</span><span>📋</span>
+            </button>
+
+            <a href="#" title="Replace with your LinkedIn">
+              <span>LinkedIn</span><span>linkedin.com/in/alexmorgan</span>
+            </a>
+
+            <a href="#" title="Replace with your GitHub">
+              <span>GitHub</span><span>github.com/alexmorgan</span>
+            </a>
+
+            <a href="#" title="Replace with your phone">
+              <span>Phone</span><span>+94 77 123 4567</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contactCard">
+          <h3>Availability & preferences</h3>
+          <p>Dummy info — replace later.</p>
+
+          <div class="kv">
+            <div><span>Role types</span><strong>Full-time / Contract</strong></div>
+            <div><span>Focus areas</span><strong>Platform, CI/CD, SRE</strong></div>
+            <div><span>Start date</span><strong>2–4 weeks</strong></div>
+            <div><span>Preferred</span><strong>Remote / Hybrid</strong></div>
+          </div>
+
+          <hr class="sep"/>
+
+          <div class="box" style="margin-top:0;">
+            <h3>What to include in your message</h3>
+            <p>
+              Project scope, current stack, constraints, and target outcomes. If it’s urgent,
+              mention maintenance window timing and severity.
+            </p>
+            <div class="pillrow">
+              <span class="pill">Scope</span><span class="pill">Timeline</span><span class="pill">Budget</span><span class="pill">Constraints</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Alex Morgan • Contact • Dummy content
+    </footer>
+  </main>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <button class="toTop" type="button" data-to-top aria-label="Back to top">↑</button>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

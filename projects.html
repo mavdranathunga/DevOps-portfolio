@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="DevOps Projects" />
+  
+  <script>
+    (function () {
+      const key = "portfolioTheme";
+      const saved = localStorage.getItem(key);
+      if (saved === "light" || saved === "dark") {
+        document.documentElement.setAttribute("data-theme", saved);
+      } else {
+        const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+        document.documentElement.setAttribute("data-theme", prefersLight ? "light" : "dark");
+      }
+    })();
+  </script>
+
+  <title>Projects — Alex Morgan</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Alex Morgan <span style="color:var(--muted2);font-weight:700;">/ DevOps Engineer</span></span>
+      </a>
+
+      <button class="burger" type="button" data-burger aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" data-menu aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+
+        <div class="actions">
+          <button class="iconBtn" type="button" data-theme-toggle aria-label="Toggle theme">
+            <span data-theme-icon aria-hidden="true"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="card pageHead reveal">
+      <div class="title">
+        <h1>Projects</h1>
+        <div class="cta" style="margin:0;">
+          <a class="btn primary" href="contact.html">Hire / Contact</a>
+          <a class="btn" href="#" title="Replace with your GitHub">GitHub</a>
+        </div>
+      </div>
+      <p>
+        Select a filter, then click <b>Details</b> on a project to open a quick modal overview.
+      </p>
+
+      <div class="filters" style="margin-top:14px;">
+        <button class="chip active" type="button" data-filter="all">All</button>
+        <button class="chip" type="button" data-filter="kubernetes">Kubernetes</button>
+        <button class="chip" type="button" data-filter="cicd">CI/CD</button>
+        <button class="chip" type="button" data-filter="terraform">Terraform</button>
+        <button class="chip" type="button" data-filter="observability">Observability</button>
+        <button class="chip" type="button" data-filter="security">Security</button>
+      </div>
+    </div>
+
+    <section class="reveal">
+      <div class="grid">
+        <article class="box col-4" data-tags="kubernetes,cicd,security">
+          <h3>Golden Path Kubernetes Platform</h3>
+          <p>
+            Multi-tenant clusters with GitOps, RBAC, and policy guardrails. Provisioning:
+            <b>2 days → 20 minutes</b>.
+          </p>
+          <div class="pillrow">
+            <span class="pill">Kubernetes</span><span class="pill">GitOps</span><span class="pill">Policies</span>
+          </div>
+          <div class="cta" style="margin-top:12px;">
+            <button class="btn small" type="button"
+              data-project-details
+              data-title="Golden Path Kubernetes Platform"
+              data-body="Dummy details: Built a multi-tenant K8s platform with namespaces, quotas, network policies, GitOps workflows, and standardized Helm templates. Included safe upgrade playbooks, backup/restore, cluster hardening, and per-team dashboards. Key wins: faster onboarding, fewer deployment incidents, consistent environments.">
+              Details
+            </button>
+            <a class="btn small ghost" href="#" title="Replace with case study link">Case Study</a>
+          </div>
+        </article>
+
+        <article class="box col-4" data-tags="cicd,security">
+          <h3>CI/CD Modernization + Supply Chain</h3>
+          <p>
+            Reusable pipelines with scanning, SBOM generation, and artifact promotion.
+            Deploys: <b>weekly → multiple/day</b>.
+          </p>
+          <div class="pillrow">
+            <span class="pill">CI/CD</span><span class="pill">SBOM</span><span class="pill">SAST</span>
+          </div>
+          <div class="cta" style="margin-top:12px;">
+            <button class="btn small" type="button"
+              data-project-details
+              data-title="CI/CD Modernization + Supply Chain"
+              data-body="Dummy details: Converted legacy Jenkins jobs into reusable CI workflows with caching, parallel test stages, automated versioning, and gated promotions. Added SAST/container/dependency scanning, SBOM generation, and signed artifacts. Rollback criteria automated using health checks and error budgets.">
+              Details
+            </button>
+            <a class="btn small ghost" href="#" title="Replace with repo link">Repo</a>
+          </div>
+        </article>
+
+        <article class="box col-4" data-tags="observability,kubernetes">
+          <h3>Observability Revamp (SLO-first)</h3>
+          <p>
+            Standard dashboards + actionable alerts + tracing. Alert noise reduced by <b>45%</b>.
+          </p>
+          <div class="pillrow">
+            <span class="pill">Prometheus</span><span class="pill">Grafana</span><span class="pill">OTel</span>
+          </div>
+          <div class="cta" style="margin-top:12px;">
+            <button class="btn small" type="button"
+              data-project-details
+              data-title="Observability Revamp (SLO-first)"
+              data-body="Dummy details: Implemented metrics/logs/traces standards (OpenTelemetry) and reduced alert fatigue by focusing on SLOs, burn-rate alerts, and clear ownership. Built dashboards per service + golden signals views, and added runbooks for common incidents.">
+              Details
+            </button>
+            <a class="btn small ghost" href="#" title="Replace with dashboard screenshots">Screens</a>
+          </div>
+        </article>
+
+        <article class="box col-6" data-tags="terraform,security">
+          <h3>Terraform Landing Zone + Guardrails</h3>
+          <p>
+            Modular IaC for networking, IAM, compute, and managed services with drift detection.
+            Saved <b>~22%</b> cost.
+          </p>
+          <div class="pillrow">
+            <span class="pill">Terraform</span><span class="pill">IAM</span><span class="pill">Policy</span>
+          </div>
+          <div class="cta" style="margin-top:12px;">
+            <button class="btn small" type="button"
+              data-project-details
+              data-title="Terraform Landing Zone + Guardrails"
+              data-body="Dummy details: Built reusable Terraform modules with reviewable changes, environment parity, and drift detection. Added least-privilege IAM patterns, tagging standards, and budget alerts. Reduced spend through autoscaling + right-sizing and introduced safe change workflows.">
+              Details
+            </button>
+            <a class="btn small ghost" href="#" title="Replace with docs link">Docs</a>
+          </div>
+        </article>
+
+        <article class="box col-6" data-tags="kubernetes,cicd">
+          <h3>Zero-Downtime Releases</h3>
+          <p>
+            Blue/green + canary with automated rollback criteria and health checks.
+            Downtime during deploys: <b>near-zero</b>.
+          </p>
+          <div class="pillrow">
+            <span class="pill">Canary</span><span class="pill">Blue/Green</span><span class="pill">Rollback</span>
+          </div>
+          <div class="cta" style="margin-top:12px;">
+            <button class="btn small" type="button"
+              data-project-details
+              data-title="Zero-Downtime Releases"
+              data-body="Dummy details: Designed progressive delivery with canary analysis, blue/green cutovers, and automated rollbacks based on latency/error rate SLOs. Added pre-prod environment parity, smoke tests, and release checklists to keep releases boring and consistent.">
+              Details
+            </button>
+            <a class="btn small ghost" href="#" title="Replace with write-up link">Write-up</a>
+          </div>
+        </article>
+
+        <article class="box col-12" data-tags="security,observability">
+          <h3>Incident Response Upgrade</h3>
+          <p>
+            Built on-call playbooks, incident templates, and postmortems. Reduced repeat incidents via
+            action tracking and monitoring improvements.
+          </p>
+          <div class="pillrow">
+            <span class="pill">On-call</span><span class="pill">Runbooks</span><span class="pill">Postmortems</span>
+          </div>
+          <div class="cta" style="margin-top:12px;">
+            <button class="btn small" type="button"
+              data-project-details
+              data-title="Incident Response Upgrade"
+              data-body="Dummy details: Standardized incident workflow: severity definitions, comms templates, on-call handoff, incident roles, and postmortem templates. Linked action items to monitoring improvements and service ownership. Result: faster triage, clearer comms, fewer repeat incidents.">
+              Details
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Alex Morgan • Projects • Dummy content
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" data-modal aria-hidden="true">
+    <div class="modalBackdrop" data-modal-backdrop></div>
+    <div class="modalPanel" role="dialog" aria-modal="true" aria-label="Project details">
+      <div class="modalHeader">
+        <h3 data-modal-title>Project Details</h3>
+        <button class="modalClose" type="button" data-modal-close aria-label="Close">✕</button>
+      </div>
+      <div class="modalBody" data-modal-body></div>
+    </div>
+  </div>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <button class="toTop" type="button" data-to-top aria-label="Back to top">↑</button>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

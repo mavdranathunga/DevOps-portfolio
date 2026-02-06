@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deshan R — DevOps Engineer</title>
+  <meta name="description" content="Modern DevOps portfolio: Kubernetes, CI/CD, Cloud, Observability." />
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="grain"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__dot"></span>
+        <span class="brand__text">DeshanR</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#experience">Experience</a>
+        <a class="nav__link" href="#certs">Certifications</a>
+        <a class="nav__link" href="#skills">Stack</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="nav__pill" href="#contact">Hire Me</a>
+      </nav>
+
+      <div class="actions">
+        <button class="iconbtn" id="themeBtn" type="button" aria-label="Toggle theme">
+          <span class="icon" aria-hidden="true">☾</span>
+        </button>
+        <button class="iconbtn" id="menuBtn" type="button" aria-label="Open menu">
+          <span class="icon" aria-hidden="true">≡</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile" id="mobileMenu" aria-hidden="true">
+      <div class="container mobile__inner">
+        <a href="#projects" class="mobile__link">Projects</a>
+        <a href="#experience" class="mobile__link">Experience</a>
+        <a href="#certs" class="mobile__link">Certifications</a>
+        <a href="#skills" class="mobile__link">Stack</a>
+        <a href="#contact" class="mobile__link">Contact</a>
+        <a href="#contact" class="mobile__cta">Hire Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <div class="kicker">
+            <span class="kicker__tag">DevOps Engineer</span>
+            <span class="kicker__sep">·</span>
+            <span class="kicker__tag">SRE</span>
+            <span class="kicker__sep">·</span>
+            <span class="kicker__tag">Cloud</span>
+            <span class="kicker__sep">·</span>
+            <span class="kicker__tag">Kubernetes</span>
+          </div>
+
+          <h1 class="hero__title">
+            Deshan<br />
+            Ranathunga
+          </h1>
+
+          <p class="hero__desc">
+            I build <span class="accent">reliable</span> platforms and automate the boring stuff:
+            CI/CD pipelines, Kubernetes workloads, IaC, observability, and secure Linux operations.
+          </p>
+
+          <div class="hero__meta">
+            <div class="metaCard">
+              <div class="metaCard__label">Location</div>
+              <div class="metaCard__value">Sri Lanka · Remote</div>
+            </div>
+            <div class="metaCard">
+              <div class="metaCard__label">Availability</div>
+              <div class="metaCard__value">Open for DevOps/SRE</div>
+            </div>
+            <div class="metaCard">
+              <div class="metaCard__label">Focus</div>
+              <div class="metaCard__value">Cloud, K8s, CI/CD, Observability</div>
+            </div>
+          </div>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">
+              <span class="btn__icon">↳</span>
+              View Projects
+            </a>
+            <a class="btn btn--ghost" href="resume.pdf" download>
+              <span class="btn__icon">↓</span>
+              Download Resume
+            </a>
+            <button class="btn btn--ghost" id="copyEmail" type="button" data-email="deshan.99.ranathunga@gmail.com">
+              <span class="btn__icon">⧉</span>
+              Copy Email
+            </button>
+          </div>
+
+          <div class="hero__small">
+            <span class="mono">Currently:</span>
+            <span>Hardening Linux + building GitOps workflows</span>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <article class="frame">
+            <div class="frame__top">
+              <div class="frame__dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="frame__title mono">/ops/preview</div>
+            </div>
+
+            <div class="frame__img" role="img" aria-label="DevOps dashboard preview">
+              <div class="frame__overlay">
+                <div class="chip mono">uptime: 99.97%</div>
+                <div class="chip mono">deploys/day: 14</div>
+                <div class="chip mono">mttr: 21m</div>
+              </div>
+
+              <svg class="frame__svg" viewBox="0 0 900 600" aria-hidden="true">
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="currentColor" stop-opacity=".18"/>
+                    <stop offset="1" stop-color="currentColor" stop-opacity=".05"/>
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="900" height="600" rx="28" fill="url(#g)"/>
+                <g opacity=".8">
+                  <path class="sigline" d="M70 440 C190 220, 320 580, 460 360 C600 140, 720 420, 830 250"
+                        fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" opacity=".25"/>
+                  <path class="sigline" d="M90 210 C220 380, 300 120, 450 250 C610 390, 710 180, 850 340"
+                        fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" opacity=".2"/>
+                  <circle class="sigdot" cx="220" cy="320" r="10" fill="currentColor" opacity=".35"/>
+                  <circle class="sigdot" cx="450" cy="250" r="10" fill="currentColor" opacity=".35"/>
+                  <circle class="sigdot" cx="720" cy="420" r="10" fill="currentColor" opacity=".35"/>
+                </g>
+                <g opacity=".9">
+                  <rect x="90" y="90" width="320" height="90" rx="18" fill="currentColor" opacity=".08"/>
+                  <rect x="90" y="210" width="520" height="90" rx="18" fill="currentColor" opacity=".06"/>
+                  <rect x="90" y="330" width="420" height="90" rx="18" fill="currentColor" opacity=".07"/>
+                </g>
+              </svg>
+            </div>
+
+            <div class="frame__bottom">
+              <div class="mono tiny">Kubernetes · Terraform · GitHub Actions · Prometheus</div>
+              <a class="link tiny" href="#skills">See stack →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <div class="section__code mono">[ 001 ]</div>
+          <h2 class="section__title">Projects</h2>
+
+          <div class="filters" role="tablist" aria-label="Project filters">
+            <button class="filter is-active" data-filter="all" type="button">All</button>
+            <button class="filter" data-filter="k8s" type="button">K8s</button>
+            <button class="filter" data-filter="cicd" type="button">CI/CD</button>
+            <button class="filter" data-filter="cloud" type="button">Cloud</button>
+            <button class="filter" data-filter="obs" type="button">Observability</button>
+          </div>
+        </div>
+
+        <div class="grid cards" id="projectGrid">
+          <article class="card" data-tags="k8s,cloud">
+            <div class="card__top">
+              <div class="mono tiny">01 / 2026</div>
+              <div class="pill mono">K8s</div>
+            </div>
+            <h3 class="card__title">GitOps Kubernetes Platform</h3>
+            <p class="card__desc">
+              FluxCD + Helm releases, multi-env promotion, sealed secrets, policy guardrails, and safe rollbacks.
+            </p>
+            <div class="card__stack mono tiny">
+              FluxCD · Helm · Kyverno · External Secrets · NGINX Ingress
+            </div>
+            <div class="card__actions">
+              <a class="mini" href="#" aria-disabled="true">/github</a>
+              <a class="mini" href="#" aria-disabled="true">/readme</a>
+            </div>
+          </article>
+
+          <article class="card" data-tags="cicd,cloud">
+            <div class="card__top">
+              <div class="mono tiny">12 / 2025</div>
+              <div class="pill mono">CI/CD</div>
+            </div>
+            <h3 class="card__title">Pipeline Factory</h3>
+            <p class="card__desc">
+              Reusable workflows with SAST, SBOM, container signing, and environment approvals.
+            </p>
+            <div class="card__stack mono tiny">
+              GitHub Actions · Trivy · Cosign · OIDC · Artifacts
+            </div>
+            <div class="card__actions">
+              <a class="mini" href="#" aria-disabled="true">/github</a>
+              <a class="mini" href="#" aria-disabled="true">/demo</a>
+            </div>
+          </article>
+
+          <article class="card" data-tags="obs,k8s">
+            <div class="card__top">
+              <div class="mono tiny">10 / 2025</div>
+              <div class="pill mono">OBS</div>
+            </div>
+            <h3 class="card__title">Golden Signals Monitoring</h3>
+            <p class="card__desc">
+              Prometheus + Grafana dashboards, SLOs, alert routing, runbooks, and noise reduction.
+            </p>
+            <div class="card__stack mono tiny">
+              Prometheus · Alertmanager · Grafana · Loki · Tempo
+            </div>
+            <div class="card__actions">
+              <a class="mini" href="#" aria-disabled="true">/grafana</a>
+              <a class="mini" href="#" aria-disabled="true">/runbook</a>
+            </div>
+          </article>
+
+          <article class="card" data-tags="cloud,cicd">
+            <div class="card__top">
+              <div class="mono tiny">08 / 2025</div>
+              <div class="pill mono">Cloud</div>
+            </div>
+            <h3 class="card__title">Terraform Landing Zone</h3>
+            <p class="card__desc">
+              Modular IaC for network, IAM, logging, and baseline security with drift detection + PR plans.
+            </p>
+            <div class="card__stack mono tiny">
+              Terraform · Terragrunt · OPA · Remote State · PR Automation
+            </div>
+            <div class="card__actions">
+              <a class="mini" href="#" aria-disabled="true">/iac</a>
+              <a class="mini" href="#" aria-disabled="true">/docs</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE (NEW) -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <div class="section__code mono">[ 002 ]</div>
+          <h2 class="section__title">Experience</h2>
+          <p class="section__sub">
+            Roles and responsibilities focused on reliability, automation, and secure operations.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="titem">
+            <div class="titem__dot" aria-hidden="true"></div>
+            <div class="titem__content">
+              <div class="titem__top">
+                <h3 class="titem__title">Senior DevOps Engineer</h3>
+                <div class="titem__meta mono tiny">Fintech Platform · 2023 — Present</div>
+              </div>
+              <ul class="titem__list">
+                <li>Owned Kubernetes production clusters (200+ pods) and release processes.</li>
+                <li>Reduced MTTR from <strong>2h → 20m</strong> using better alerting + runbooks.</li>
+                <li>Built GitOps workflows using FluxCD & Helm; improved rollback safety.</li>
+              </ul>
+              <div class="titem__stack mono tiny">Kubernetes · AWS · Terraform · FluxCD · Prometheus · Grafana</div>
+            </div>
+          </article>
+
+          <article class="titem">
+            <div class="titem__dot" aria-hidden="true"></div>
+            <div class="titem__content">
+              <div class="titem__top">
+                <h3 class="titem__title">DevOps / Cloud Engineer</h3>
+                <div class="titem__meta mono tiny">SaaS Company · 2021 — 2023</div>
+              </div>
+              <ul class="titem__list">
+                <li>Designed CI/CD pipelines for microservices; standardized build/deploy patterns.</li>
+                <li>Implemented blue-green & canary deployments; improved success rate to <strong>99%</strong>.</li>
+                <li>Automated security scanning and artifact signing across environments.</li>
+              </ul>
+              <div class="titem__stack mono tiny">GitHub Actions · Docker · NGINX · SAST/SBOM · Cloud IAM</div>
+            </div>
+          </article>
+
+          <article class="titem">
+            <div class="titem__dot" aria-hidden="true"></div>
+            <div class="titem__content">
+              <div class="titem__top">
+                <h3 class="titem__title">Linux Systems Engineer</h3>
+                <div class="titem__meta mono tiny">Enterprise · 2018 — 2021</div>
+              </div>
+              <ul class="titem__list">
+                <li>Managed Oracle DB and Tomcat workloads in production environments.</li>
+                <li>Automated patching, backups, and baseline server hardening (CIS-aligned).</li>
+                <li>Improved stability through monitoring + capacity planning and standard runbooks.</li>
+              </ul>
+              <div class="titem__stack mono tiny">RHEL · Oracle · Tomcat · Bash · Ansible · Monitoring</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS (NEW) -->
+    <section class="section" id="certs">
+      <div class="container">
+        <div class="section__head">
+          <div class="section__code mono">[ 003 ]</div>
+          <h2 class="section__title">Certifications</h2>
+          <p class="section__sub">
+            Credentials that validate real-world platform skills (replace dummy items with yours).
+          </p>
+        </div>
+
+        <div class="certGrid">
+          <div class="certCard">
+            <div class="certCard__top">
+              <div class="pill mono">Kubernetes</div>
+              <div class="mono tiny muted">2026</div>
+            </div>
+            <div class="certCard__title">CKA — Certified Kubernetes Administrator</div>
+            <div class="certCard__meta tiny muted">Linux · Cluster Ops · Troubleshooting</div>
+          </div>
+
+          <div class="certCard">
+            <div class="certCard__top">
+              <div class="pill mono">Cloud</div>
+              <div class="mono tiny muted">2025</div>
+            </div>
+            <div class="certCard__title">AWS Solutions Architect — Associate</div>
+            <div class="certCard__meta tiny muted">Networking · IAM · Reliability</div>
+          </div>
+
+          <div class="certCard">
+            <div class="certCard__top">
+              <div class="pill mono">IaC</div>
+              <div class="mono tiny muted">2025</div>
+            </div>
+            <div class="certCard__title">HashiCorp Terraform Associate</div>
+            <div class="certCard__meta tiny muted">Modules · State · Best Practices</div>
+          </div>
+
+          <div class="certCard">
+            <div class="certCard__top">
+              <div class="pill mono">Linux</div>
+              <div class="mono tiny muted">2024</div>
+            </div>
+            <div class="certCard__title">RHCSA — Red Hat Certified System Administrator</div>
+            <div class="certCard__meta tiny muted">RHEL · Systemd · Security Basics</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <div class="section__code mono">[ 004 ]</div>
+          <h2 class="section__title">Stack</h2>
+          <p class="section__sub">
+            Tools I use to ship, scale, and secure production systems.
+          </p>
+        </div>
+
+        <div class="grid stack">
+          <div class="stackBox">
+            <div class="stackBox__title mono">Cloud</div>
+            <div class="stackBox__items">
+              <span>AWS</span><span>Azure</span><span>GCP</span><span>VPC/VNet</span><span>IAM</span>
+            </div>
+          </div>
+          <div class="stackBox">
+            <div class="stackBox__title mono">Containers</div>
+            <div class="stackBox__items">
+              <span>Docker</span><span>Podman</span><span>Kubernetes</span><span>Helm</span><span>Ingress</span>
+            </div>
+          </div>
+          <div class="stackBox">
+            <div class="stackBox__title mono">CI/CD</div>
+            <div class="stackBox__items">
+              <span>GitHub Actions</span><span>GitLab CI</span><span>Jenkins</span><span>Argo CD</span><span>Flux</span>
+            </div>
+          </div>
+          <div class="stackBox">
+            <div class="stackBox__title mono">Observability</div>
+            <div class="stackBox__items">
+              <span>Prometheus</span><span>Grafana</span><span>Loki</span><span>ELK</span><span>OpenTelemetry</span>
+            </div>
+          </div>
+          <div class="stackBox">
+            <div class="stackBox__title mono">Infra / Linux</div>
+            <div class="stackBox__items">
+              <span>Terraform</span><span>Ansible</span><span>Systemd</span><span>Nginx</span><span>Hardening</span>
+            </div>
+          </div>
+          <div class="stackBox">
+            <div class="stackBox__title mono">Security</div>
+            <div class="stackBox__items">
+              <span>Trivy</span><span>SBOM</span><span>Cosign</span><span>Vault</span><span>Policy as Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <div class="section__code mono">[ 005 ]</div>
+          <h2 class="section__title">Get In Touch</h2>
+        </div>
+
+        <div class="contact">
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="form__label mono">01 What’s Your Name?</div>
+              <input class="input" name="name" placeholder="Your name *" required />
+            </div>
+
+            <div class="form__row">
+              <div class="form__label mono">02 What’s Your Mail?</div>
+              <input class="input" name="email" type="email" placeholder="you@company.com *" required />
+            </div>
+
+            <div class="form__row">
+              <div class="form__label mono">03 Your Message</div>
+              <textarea class="input input--area" name="message" rows="4" placeholder="Hello Deshan, can you help me with... *" required></textarea>
+            </div>
+
+            <div class="form__foot">
+              <button class="btn" type="submit">
+                <span class="btn__icon">↗</span>
+                Submit
+              </button>
+              <span class="tiny muted">This form is demo-only (no backend).</span>
+            </div>
+          </form>
+
+          <aside class="contactInfo">
+            <div class="contactInfo__head mono">[ QUICK CONTACT ]</div>
+
+            <button class="infoItem infoItem--btn" type="button" id="emailBtn" data-email="deshan.99.ranathunga@gmail.com">
+              <div class="infoItem__icon" aria-hidden="true">✉</div>
+              <div class="infoItem__txt">
+                <div class="tiny muted">Email</div>
+                <div class="mono">deshan.99.ranathunga@gmail.com</div>
+              </div>
+              <span class="tiny muted">copy</span>
+            </button>
+
+            <a class="infoItem" href="resume.pdf" download>
+              <div class="infoItem__icon" aria-hidden="true">↓</div>
+              <div class="infoItem__txt">
+                <div class="tiny muted">Resume</div>
+                <div class="mono">Download PDF</div>
+              </div>
+              <span class="tiny muted">file</span>
+            </a>
+
+            <a class="infoItem" href="#" aria-disabled="true">
+              <div class="infoItem__icon" aria-hidden="true">⌂</div>
+              <div class="infoItem__txt">
+                <div class="tiny muted">GitHub</div>
+                <div class="mono">github.com/mavdranathunga</div>
+              </div>
+            </a>
+
+            <a class="infoItem" href="#" aria-disabled="true">
+              <div class="infoItem__icon" aria-hidden="true">⎋</div>
+              <div class="infoItem__txt">
+                <div class="tiny muted">LinkedIn</div>
+                <div class="mono">linkedin.com/in/mavdranathunga</div>
+              </div>
+            </a>
+
+            <div class="contactInfo__bar"></div>
+            <div class="tiny muted">
+              Prefer a quick call? Send a brief note and I’ll reply with times.
+            </div>
+          </aside>
+        </div>
+
+        <footer class="footer">
+          <div class="tiny muted">find an issue on this page? <a class="link" href="#contact">contact me</a></div>
+          <div class="tiny mono">© <span id="year"></span> · built with ☕ by DeshanR</div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <div class="termCursor" id="termCursor" aria-hidden="true"></div>
+  <div class="termRing" id="termRing" aria-hidden="true"></div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
